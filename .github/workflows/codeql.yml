@@ -64,7 +64,7 @@ jobs:
         # Fetch the results and fail the workflow if any warnings or errors are found
       - name: Check CodeQL Results
         run: |
-          RESULTS_FILE=$(find . -name '${{matrix.language}}.sarif')
+          RESULTS_FILE=$(find . -name 'javascript.sarif')
           ls -l
           cd codeql-results
           ls -l
