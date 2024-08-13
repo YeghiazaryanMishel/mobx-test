@@ -68,6 +68,7 @@ jobs:
           ls -l
           cd codeql-results
           ls -l
+          cd ../
           echo $RESULTS_FILE
           cat $RESULTS_FILE
           
